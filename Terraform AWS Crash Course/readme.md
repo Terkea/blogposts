@@ -34,11 +34,11 @@ First thing you need to get your set of keys from AWS so we can connect to your 
 1. Click on your profile
 2. Security credentials
     
-    ![Screenshot 2022-03-01 at 13.13.34.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_13.13.34.png)
+    ![Screenshot 2022-03-01 at 13.13.34.png](./Screenshot_2022-03-01_at_13.13.34.png)
     
 3. Create access keys
     
-    ![Screenshot 2022-03-01 at 13.15.41.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_13.15.41.png)
+    ![Screenshot 2022-03-01 at 13.15.41.png](./Screenshot_2022-03-01_at_13.15.41.png)
     
     Download the `.csv` locally after creation or you wont be able to ever see both keys again and have to delete the newly created key pair and create a new set.
     
@@ -114,11 +114,11 @@ To see the available AMIs:
 6. Proceed without a key pair
 7. You do not need to launch the instance, this was just a recap of the workflow in the console so it will make more sense when automating that with terraform
 
-![Screenshot 2022-03-01 at 13.49.54.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_13.49.54.png)
+![Screenshot 2022-03-01 at 13.49.54.png](./Screenshot_2022-03-01_at_13.49.54.png)
 
 For learning purposes be sure you have the Free tire only checked. You shouldn’t be charged for creating one of those. Just be sure you shut it down accordingly once you are done with it.
 
-![Screenshot 2022-03-01 at 13.44.03.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_13.44.03.png)
+![Screenshot 2022-03-01 at 13.44.03.png](./Screenshot_2022-03-01_at_13.44.03.png)
 
 ### **Create it using Terraform**
 
@@ -169,7 +169,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 There you should find something similar to the image below
 
-![Screenshot 2022-03-01 at 15.04.00.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_15.04.00.png)
+![Screenshot 2022-03-01 at 15.04.00.png](./Screenshot_2022-03-01_at_15.04.00.png)
 
 ### Updating resources
 
@@ -238,7 +238,7 @@ EOF
 
 To verify that our code worked refer to the AWS console and see if it has created the new IAM. You should have the `iam_for_lambda` created
 
-![Screenshot 2022-03-01 at 15.37.16.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_15.37.16.png)
+![Screenshot 2022-03-01 at 15.37.16.png](./Screenshot_2022-03-01_at_15.37.16.png)
 
 ### Local variables
 
@@ -329,7 +329,7 @@ Now you need to apply the changes and check inside the AWS console if everything
 
 You should be able to make a test for the function and that should have a valid return. See below
 
-![Screenshot 2022-03-01 at 16.30.36.png](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/Screenshot_2022-03-01_at_16.30.36.png)
+![Screenshot 2022-03-01 at 16.30.36.png](./Screenshot_2022-03-01_at_16.30.36.png)
 
 **To recap**
 
@@ -501,4 +501,4 @@ Ultimately, although you should not be charged a pence for following along with 
 
 # Download Code
 
-[terraform_aws_crashcourse.zip](Terraform%20AWS%20Crash%20Course%204fabc9526eb1472a988ed6d6fe08ada9/terraform_aws_crashcourse.zip)
+[terraform_aws_crashcourse.zip](./terraform_aws_crashcourse.zip)
